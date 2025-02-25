@@ -7,6 +7,7 @@ Seu estilo de codificação segue um modelo **procedural modular**.
 ---
 
 ## 📂 Módulos do Projeto
+<br/>
 
 | **Módulo**  | **Descrição**  | **Principais Responsabilidades**  |
 |-------------|---------------|------------------------------------|
