@@ -46,3 +46,5 @@ python gui.py
 ```
 
 4. Informe o período desejado na interface da automação.
+
+5. Clique no botão "Acionar".
