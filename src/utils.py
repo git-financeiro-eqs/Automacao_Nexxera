@@ -16,7 +16,6 @@ def encontrar_referencia(imagem):
             cont += 1
             if cont == 2:
                 break
-            print("Imagem não encontrada")
             pass
  
  
@@ -31,7 +30,6 @@ def encontrar_imagem(imagem):
             cont += 1
             if cont == 2:
                 break
-            print("Imagem não encontrada")
             pass
  
  
