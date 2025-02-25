@@ -26,9 +26,7 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 
 ---
 
-## 🛠️ Como Usar
-
-### Instalação:
+## 🛠️ Instalação:
 
 1. Clone o repositório ou baixe o arquivo ZIP do programa:
 ```bash
@@ -45,6 +43,10 @@ pip install -r requirements.txt
 python gui.py
 ```
 
-4. Informe o período desejado na interface da automação.
+##  Como Usar
 
-5. Clique no botão "Acionar".
+1. O Microsiga precisa estar aberto na rotina 
+
+. Informe o período desejado na interface da automação.
+
+. Clique no botão "Acionar".
