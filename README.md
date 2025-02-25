@@ -1,7 +1,7 @@
 # Automação Nexxera
 
 ## 📌 Descrição
-Este script automatiza o processo de incerção de arquivos CNAB no microsiga. A automação faz isso coletando esses arquivos na plataforma **Nexxera WebEDI**, extraindo dados do nome dos arquivos e, destinando-os corretamente no **Microsiga** a partir destes dados.
+Este script automatiza o processo de incerção de arquivos CNAB no microsiga. A automação faz isso coletando esses arquivos na plataforma **Nexxera SkylineWeb**, extraindo dados do nome dos arquivos e, destinando-os corretamente no **Microsiga** a partir destes dados.
 A automação garante que os arquivos sejam baixados, descompactados e lançados corretamente no sistema.
 
 ---
