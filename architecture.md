@@ -15,7 +15,7 @@ Seu estilo de codificação segue um modelo **procedural modular**.
 |-------------|---------------|------------------------------------|
 | `gui`       | Módulo responsável pela interface gráfica utilizando **Tkinter**. | - Disponibilizar o botão de acionamento. <br> - Permitir seleção de período. |
 | `utils`     | Módulo contendo funções auxiliares reutilizáveis para otimizar a execução. | - Função auxiliar para o processamento dos arquivos CNAB. <br> - Funções de ações repetitivas. |
-| `main`   | Script principal da automação, integrando o módulo `utils`. | - Lógica de execução da automação. <br> - Controlar o fluxo de download, extração e envio ao ERP. <br> - Gerenciar exceções e verificar estabilidade do sistema. |
+| `main`   | Script principal da automação, integrando o módulo `utils`. | - Lógica de execução da automação. |
 
 ---
 <br/>
