@@ -27,7 +27,7 @@ do portal da Nexxera, a Data Base do sistema muda imprevisivelmente para a data 
 Isso não acontece todas as vezes, mas pode acontecer. Para evitar que isso interfira no processo, criei uma lógica de programação que usa a tecnologia OCR para verificar a Data Base a cada novo lançamento.
 <br/>
 
-Outro ponto importante a se esclarecer é que não seram todos os arquivos extraídos da plataforma Nexxera dentro do período determinado que seram importados para o sistema Microsiga. Os arquivos que devem ser importados precisam cumprir dois critérios: o arquivo não pode ser de extenção ".protocolo" e precisa ter "PAG" nas três primeiras letras de seu nome, conforme demonstra esse trecho do código:
+Outro ponto importante a se esclarecer é que não serão todos os arquivos extraídos da plataforma Nexxera dentro do período determinado que serão importados para o sistema Microsiga. Os arquivos que devem ser importados precisam cumprir dois critérios: o arquivo não pode ser de extensão ".protocolo" e precisa ter "PAG" nas três primeiras letras de seu nome, conforme demonstra esse trecho do código:
 <br/>
 <br/>
 ```
