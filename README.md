@@ -1,7 +1,7 @@
 # 📂 Automação Nexxera
 
 ## 📌 Descrição
-Este script automatiza o processo de login, extração e processamento de arquivos CNAB a partir da plataforma **Nexxera WebEDI**, transferindo os dados para o **ERP Microsiga**.  
+Este script automatiza o processo de incerção de arquivos CNAB no microsiga. A automação faz isso coletando esses arquivos na plataforma **Nexxera WebEDI**, extraindo dados do nome dos arquivos e, destinando-os corretamente no **Microsiga** a partir destes dados.
 A automação garante que os arquivos sejam baixados, descompactados e lançados corretamente no sistema.
 
 ---
@@ -19,7 +19,7 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 
 ## ⚙️ Funcionalidades
 ✅ Acessa a plataforma **Nexxera WebEDI** e realiza login automaticamente  
-✅ Filtra os arquivos disponíveis por **período específico**  
+✅ Filtra os arquivos disponíveis por **período específicado**  
 ✅ Baixa e **descompacta** os arquivos CNAB  
 ✅ Lança os arquivos no **ERP Microsiga**  
 ✅ Utiliza **OCR** para garantir a correta **data de lançamento**  
@@ -32,7 +32,7 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 
 1️⃣ Clone o repositório ou baixe o arquivo ZIP do programa:
 ```bash
-    https://github.com/git-financeiro-eqs/Automacao_Nexxera.git
+https://github.com/git-financeiro-eqs/Automacao_Nexxera.git
 ```
 ```bash
 pip install -r requirements.txt
@@ -41,4 +41,4 @@ pip install -r requirements.txt
 ```bash
 python gui.py
 ```
-3️⃣ Informe o período desejado quando solicitado.
+3️⃣ Informe o período desejado na interface da automação.
