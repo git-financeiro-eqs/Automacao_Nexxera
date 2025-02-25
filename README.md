@@ -28,8 +28,12 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 
 ## 🛠️ Como Usar
 
-### 1️⃣ Instale as dependências:
+### Instale as dependências:
 
+1️⃣ Clone o repositório ou baixe o arquivo ZIP do programa:
+```bash
+    https://github.com/git-financeiro-eqs/Automacao_E2DOC.git
+```
 ```bash
 pip install -r requirements.txt
 ```
