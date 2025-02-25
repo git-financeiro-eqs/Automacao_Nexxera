@@ -7,7 +7,7 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 ---
 
 ## 🚀 Tecnologias Utilizadas
-- **Python 3**
+- **Python**
 - **Selenium** → Automação de navegador  
 - **PyAutoGUI** → Automação de teclado e mouse  
 - **EasyOCR** → Reconhecimento óptico de caracteres  
