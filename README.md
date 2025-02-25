@@ -30,7 +30,7 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 
 ### Instalação:
 
- 1️. Clone o repositório ou baixe o arquivo ZIP do programa:
+1. Clone o repositório ou baixe o arquivo ZIP do programa:
 ```bash
 https://github.com/git-financeiro-eqs/Automacao_Nexxera.git
 ```
