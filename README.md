@@ -45,8 +45,8 @@ python gui.py
 
 ##  Como Usar
 
-1. O Microsiga precisa estar aberto na rotina 
+1. O Microsiga precisa estar aberto na tela principal da rotina "Funcões Ctas a Pag".
 
-. Informe o período desejado na interface da automação.
+2. Informe o período desejado na interface da automação.
 
-. Clique no botão "Acionar".
+3. Clique no botão "Acionar" e aguarde até que ela finalize o processo não inserindo mais nenhum arquivo na rotina do Siga.
