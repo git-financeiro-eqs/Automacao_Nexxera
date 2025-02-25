@@ -34,12 +34,15 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 ```bash
 https://github.com/git-financeiro-eqs/Automacao_Nexxera.git
 ```
+
 2. Instale as dependências
 ```bash
 pip install -r requirements.txt
 ```
-2️. Execute o script:
+
+3. Execute o script:
 ```bash
 python gui.py
 ```
-3️. Informe o período desejado na interface da automação.
+
+4. Informe o período desejado na interface da automação.
