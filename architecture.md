@@ -20,18 +20,6 @@ Seu estilo de codificação segue um modelo **procedural modular**.
 ---
 <br/>
 
-## 🔍 Fluxo de Execução
-
-1️⃣ **O usuário inicia a automação via interface gráfica (`gui`).**  
-2️⃣ **A automação acessa o portal Nexxera e realiza login automaticamente.**  
-3️⃣ **Os arquivos CNAB são filtrados pelo período desejado e baixados.**  
-4️⃣ **Os arquivos são descompactados e processados (`utils`).**  
-5️⃣ **Os dados são lançados no ERP Microsiga (`main.py`).**  
-6️⃣ **OCR (`EasyOCR`) é utilizado para validar a data de lançamento.**  
-
----
-<br/>
-
 ## 🛠️ Observação Importante
 
 Na rotina "Funcões Ctas a Pag" do Microsiga, por algum motivo que ninguém sabe explicar, dependendo da data de vencimento de um dos títulos que está sendo importado naquele momento através do arquivo CNAB extraído
