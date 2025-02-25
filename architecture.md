@@ -18,6 +18,7 @@ Seu estilo de codificação segue um modelo **procedural modular**.
 | `main`   | Script principal da automação, integrando o módulo e `utils`. | - Orquestrar a execução da automação. <br> - Controlar o fluxo de download, extração e envio ao ERP. <br> - Gerenciar exceções e verificar estabilidade do sistema. |
 
 ---
+<br/>
 
 ## 🔍 Fluxo de Execução
 
@@ -29,6 +30,7 @@ Seu estilo de codificação segue um modelo **procedural modular**.
 6️⃣ **OCR (`EasyOCR`) é utilizado para validar a data de lançamento.**  
 
 ---
+<br/>
 
 ## 🛠️ Observação Importante
 
