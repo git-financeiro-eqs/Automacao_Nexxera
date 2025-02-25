@@ -20,7 +20,7 @@ Seu estilo de codificação segue um modelo **procedural modular**.
 ---
 <br/>
 
-## 🛠️ Observação Importante
+## 🛠️ Observações Importantes
 
 Na rotina "Funcões Ctas a Pag" do Microsiga, por algum motivo que ninguém sabe explicar, dependendo da data de vencimento de um dos títulos que está sendo importado naquele momento através do arquivo CNAB extraído
 do portal da Nexxera, a Data Base do sistema muda imprevisivelmente para a data de pagamento daquele título, ou, para alguma data de 2005 (sim, isso é muito estranho e esquisito).
