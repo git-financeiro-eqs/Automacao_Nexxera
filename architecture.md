@@ -5,6 +5,8 @@ A automação possui uma arquitetura modular, separando as responsabilidades em 
 Seu estilo de codificação segue um modelo **procedural modular**.
 
 ---
+<br/>
+
 
 ## 📂 Módulos do Projeto
 <br/>
