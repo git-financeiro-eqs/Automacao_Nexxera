@@ -18,7 +18,7 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 ---
 
 ## ⚙️ Funcionalidades
-✅ Acessa a plataforma **Nexxera WebEDI** e realiza login automaticamente  
+✅ Acessa a plataforma **Nexxera SkylineWeb** e realiza login automaticamente  
 ✅ Filtra os arquivos disponíveis por **período específicado**  
 ✅ Baixa e **descompacta** os arquivos CNAB  
 ✅ Lança os arquivos no **ERP Microsiga**  
