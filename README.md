@@ -28,17 +28,18 @@ A automação garante que os arquivos sejam baixados, descompactados e lançados
 
 ## 🛠️ Como Usar
 
-### Instale as dependências:
+### Instalação:
 
-1️⃣ Clone o repositório ou baixe o arquivo ZIP do programa:
+1️. Clone o repositório ou baixe o arquivo ZIP do programa:
 ```bash
 https://github.com/git-financeiro-eqs/Automacao_Nexxera.git
 ```
+2. Instale as dependências
 ```bash
 pip install -r requirements.txt
 ```
-2️⃣ Execute o script:
+2️. Execute o script:
 ```bash
 python gui.py
 ```
-3️⃣ Informe o período desejado na interface da automação.
+3️. Informe o período desejado na interface da automação.
