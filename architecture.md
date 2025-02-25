@@ -29,6 +29,7 @@ Isso não acontece todas as vezes, mas pode acontecer. Para evitar que isso inte
 
 Outro ponto importante a se esclarecer é que não seram todos os arquivos extraídos da plataforma Nexxera SkylineWeb dentro do período determinado que seram importados para o sistema Microsiga. Os arquivos que devem ser importados precisam cumprir dois critérios: o arquivo não pode ser de extenção ".protocolo" e precisa ter "PAG" nas três primeiras letras de seu nome, conforme demonstra esse trecho do código:
 <br/>
+<br/>
 ```
 arquivos = [arquivo for arquivo in os.listdir(pasta_destino) if not arquivo.endswith(".protocolo") and arquivo[:3] == "PAG"]
 ```
