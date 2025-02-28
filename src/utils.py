@@ -33,18 +33,18 @@ def encontrar_imagem(imagem):
             pass
  
  
-def clicar_microsiga(imagem=r'Imagens\microsiga.png'):
+def clicar_microsiga():
     try:
-        elemento = encontrar_imagem(imagem)
+        elemento = encontrar_imagem(r'Imagens\IconeMicrosiga.png')
         x, y = elemento
         pyautogui.click(x, y)
     except:
         try:
-            elemento = encontrar_imagem(r'Imagens\microsiga2.png')
+            elemento = encontrar_imagem(r'Imagens\IconeMicrosigaSelecionado.png')
             x, y = elemento
             pyautogui.click(x, y)
         except:
-            elemento = encontrar_imagem(r'Imagens\microsigaWin11.png')
+            elemento = encontrar_imagem(r'Imagens\IconeMicrosigaWin11.png')
             x, y = elemento
             pyautogui.click(x, y)
  
@@ -100,29 +100,31 @@ def colar_dado_no_campo(dado):
  
 def reabrir_rotina_siga(data_formatada):
     pyautogui.press("esc", interval=1)
-    func_cta_pag = encontrar_imagem(r'Imagens\funcoesCtasPag.png')
+    func_cta_pag = encontrar_imagem(r'Imagens\RotinaFuncoesCtasPag.png')
     x,y = func_cta_pag
     pyautogui.doubleClick(x, y)
     while True:
-        clicar = encontrar_imagem(r'Imagens\botaoConfirmar.png')
+        clicar = encontrar_imagem(r'Imagens\BotaoConfirmar.png')
         if type(clicar) == tuple:
             pyautogui.write(data_formatada, interval=0.2)
             pyautogui.press("tab", interval=0.2)
             x, y = clicar
             pyautogui.click(x, y)
-            clicar2 = encontrar_imagem(r'Imagens\botaoConfirmar.png')
+            clicar2 = encontrar_imagem(r'Imagens\BotaoConfirmar.png')
             while type(clicar2) == tuple:
-                clicar2 = encontrar_imagem(r'Imagens\botaoConfirmar.png')
+                clicar2 = encontrar_imagem(r'Imagens\BotaoConfirmar.png')
                 x, y = clicar2
                 pyautogui.click(x, y)
             break
     while True:
-        ignorar4 = encontrar_imagem(r'Imagens\ignorar4.png')
+        ignorar4 = encontrar_imagem(r'Imagens\ReferenciaIgnorar4.png')
+        sleep(1)
         if type(ignorar4) == tuple:
             pyautogui.press(["tab"]*2, interval=0.2)
             pyautogui.press("enter", interval=0.2)
             break
     while True:
-        abriu = encontrar_imagem(r'Imagens\abriu.png')
+        abriu = encontrar_imagem(r'Imagens\ReferenciaAbriuRotina.png')
         if type(abriu) == tuple:
             return True
+            
