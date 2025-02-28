@@ -30,7 +30,7 @@ def automacao(periodo):
     driver.get("https://webedi.nexxera.io/login")
     driver.maximize_window()
  
-    _ = driver.find_element(By.ID, "mailbox").send_keys("***********")
+    _ = driver.find_element(By.ID, "mailbox").send_keys("*************")
     _ = driver.find_element(By.ID, "password").send_keys("********")
     _ = driver.find_element(By.ID, "submit").click()
  
@@ -134,7 +134,7 @@ def automacao(periodo):
  
         while True:
             utils.clicar_microsiga()
-            esta_na_rotina = utils.encontrar_imagem(r'Imagens\EstaNaRotina.png')
+            esta_na_rotina = utils.encontrar_imagem(r'Imagens\ReferenciaAbriuRotina.png')
             if type(esta_na_rotina) == tuple:
                 break
             sleep(0.8)
@@ -153,10 +153,10 @@ def automacao(periodo):
                 """
                 sleep(0.8)
                 try:
-                    referencia = utils.encontrar_referencia(r'Imagens\referencia.png')
+                    referencia = utils.encontrar_referencia(r'Imagens\ReferenciaMatriz.png')
                     x, y = referencia
                 except:
-                    referencia = utils.encontrar_referencia(r'Imagens\referencia2.png')
+                    referencia = utils.encontrar_referencia(r'Imagens\ReferenciaMatriz2.png')
                     x, y = referencia
                    
                 x = x - 75
@@ -179,14 +179,14 @@ def automacao(periodo):
                 pyautogui.press("enter", interval=0.2)
  
                 while True:
-                    esperar = utils.encontrar_imagem(r'Imagens\esperarAparecer.png')
+                    esperar = utils.encontrar_imagem(r'Imagens\Referencia.png')
                     if type(esperar) == tuple:
                         break
  
                 pyautogui.press("enter", interval=0.2)
  
                 while True:
-                    esperar = utils.encontrar_imagem(r'Imagens\perguntas.png')
+                    esperar = utils.encontrar_imagem(r'Imagens\BotaoPerguntas.png')
                     if type(esperar) == tuple:
                         break
  
@@ -222,7 +222,7 @@ def automacao(periodo):
                     pyautogui.press("up", interval=0.2)
                     pyautogui.press("enter", interval=0.2)
 
-                clicar = utils.encontrar_imagem(r'Imagens\informacoes.png')
+                clicar = utils.encontrar_imagem(r'Imagens\BotaoInformacoes.png')
                 x, y = clicar
  
                 pyautogui.click(x, y)
@@ -231,13 +231,13 @@ def automacao(periodo):
                 pyautogui.press("enter", interval=1.5)
  
                 while True:
-                    esperar = utils.encontrar_imagem(r'Imagens\aguarde.png')
+                    esperar = utils.encontrar_imagem(r'Imagens\ReferenciaAguarde.png')
                     if type(esperar) != tuple:
-                        ignorar = utils.encontrar_imagem(r'Imagens\ignorar.png')
-                        ignorar2 = utils.encontrar_imagem(r'Imagens\ignorar2.png')
-                        ignorar3 = utils.encontrar_imagem(r'Imagens\ignorar3.png')
-                        erro_datab = utils.encontrar_imagem(r'Imagens\erroDataBase.png')
-                        arq_corromp = utils.encontrar_imagem(r'Imagens\arqCorrompido.png')
+                        ignorar = utils.encontrar_imagem(r'Imagens\ReferenciaIgnorar.png')
+                        ignorar2 = utils.encontrar_imagem(r'Imagens\ReferenciaIgnorar2.png')
+                        ignorar3 = utils.encontrar_imagem(r'Imagens\Referenciaignorar3.png')
+                        erro_datab = utils.encontrar_imagem(r'Imagens\ErroDataBase.png')
+                        arq_corromp = utils.encontrar_imagem(r'Imagens\ArqCorrompido.png')
                         if type(arq_corromp) == tuple:
                             pyautogui.press("enter", interval=0.2)
                         if type(erro_datab) == tuple:
@@ -249,14 +249,14 @@ def automacao(periodo):
                         if type(ignorar) == tuple:
                             pyautogui.press("enter", interval=0.2)
                             while True:
-                                negar = utils.encontrar_imagem(r'Imagens\nao.png')
+                                negar = utils.encontrar_imagem(r'Imagens\Negar.png')
                                 if type(negar) == tuple:
                                     pyautogui.press("right", interval=0.3)
                                     pyautogui.press("enter", interval=0.3)
                                     break
 
                         if type(arq_corromp) != tuple and type(erro_datab) != tuple and type(ignorar) != tuple and type(ignorar2) != tuple and type(ignorar3) != tuple:
-                            esperar = utils.encontrar_imagem(r'Imagens\aguarde.png')
+                            esperar = utils.encontrar_imagem(r'Imagens\ReferenciaAguarde.png')
                             if type(esperar) != tuple:
                                 return
  
