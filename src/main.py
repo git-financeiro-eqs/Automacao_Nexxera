@@ -19,6 +19,7 @@ from selenium.webdriver.remote.webelement import WebElement
  
 pyautogui.FAILSAFE = True
  
+ 
 def automacao(periodo):
     """
     Função principal. Nela está o fluxo da tarefa que esse programa realiza.
@@ -30,8 +31,8 @@ def automacao(periodo):
     driver.get("https://webedi.nexxera.io/login")
     driver.maximize_window()
  
-    _ = driver.find_element(By.ID, "mailbox").send_keys("*************")
-    _ = driver.find_element(By.ID, "password").send_keys("********")
+    _ = driver.find_element(By.ID, "mailbox").send_keys("**************")
+    _ = driver.find_element(By.ID, "password").send_keys("*******")
     _ = driver.find_element(By.ID, "submit").click()
  
     aux = 0
@@ -186,12 +187,14 @@ def automacao(periodo):
                 pyautogui.press("enter", interval=0.2)
  
                 while True:
-                    esperar = utils.encontrar_imagem(r'Imagens\BotaoPerguntas.png')
-                    if type(esperar) == tuple:
-                        break
+                    clicar = utils.encontrar_imagem(r'Imagens\BotaoPerguntas.png')
+                    if type(clicar) == tuple:
+                        x, y = clicar
+                        pyautogui.click(x, y)
+                        abriu = utils.encontrar_imagem(r'Imagens\ReferenciaAbriuPerguntas.png')
+                        if type(abriu) == tuple:
+                            break
  
-                x, y = esperar
-                pyautogui.click(x, y)
  
                 sleep(1)
  
@@ -222,8 +225,15 @@ def automacao(periodo):
                     pyautogui.press("up", interval=0.2)
                     pyautogui.press("enter", interval=0.2)
 
-                clicar = utils.encontrar_imagem(r'Imagens\BotaoInformacoes.png')
-                x, y = clicar
+
+                while True:
+                    clicar = utils.encontrar_imagem(r'Imagens\BotaoInformacoes.png')
+                    if type(clicar) == tuple:
+                        x, y = clicar
+                        pyautogui.click(x, y)
+                        abriu = utils.encontrar_imagem(r'Imagens\ReferenciaAbriuInformacoes.png')
+                        if type(abriu) == tuple:
+                            break
  
                 pyautogui.click(x, y)
                 sleep(0.3)
