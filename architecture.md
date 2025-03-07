@@ -31,5 +31,5 @@ Outro ponto importante a se esclarecer é que não serão todos os arquivos extr
 <br/>
 <br/>
 ```
-arquivos = [arquivo for arquivo in os.listdir(pasta_destino) if not arquivo.endswith(".protocolo") and arquivo[:3] == "PAG"]
+arquivos = [arquivo for arquivo in os.listdir(pasta_destino) if not arquivo.endswith(".protocolo") and arquivo[:3] == "PAG" and arquivo.split("_")[1] != "422"]
 ```
