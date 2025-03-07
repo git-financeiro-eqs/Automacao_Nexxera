@@ -129,7 +129,7 @@ def automacao(periodo):
     data_formatada = agora.strftime("%d/%m/%y")
     data_formatada2 = agora.strftime("%d/%m/%Y")
  
-    arquivos = [arquivo for arquivo in os.listdir(pasta_destino) if not arquivo.endswith(".protocolo") and arquivo[:3] == "PAG"]
+    arquivos = [arquivo for arquivo in os.listdir(pasta_destino) if not arquivo.endswith(".protocolo") and arquivo[:3] == "PAG" and arquivo.split("_")[1] != "422"]
  
     if arquivos:
  
