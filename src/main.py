@@ -246,6 +246,7 @@ def automacao(periodo):
                         ignorar = utils.encontrar_imagem(r'Imagens\ReferenciaIgnorar.png')
                         ignorar2 = utils.encontrar_imagem(r'Imagens\ReferenciaIgnorar2.png')
                         ignorar3 = utils.encontrar_imagem(r'Imagens\Referenciaignorar3.png')
+                        ignorar4 = utils.encontrar_imagem(r'Imagens\Referenciaignorar4.png')
                         erro_datab = utils.encontrar_imagem(r'Imagens\ErroDataBase.png')
                         arq_corromp = utils.encontrar_imagem(r'Imagens\ArqCorrompido.png')
                         if type(arq_corromp) == tuple:
@@ -254,7 +255,7 @@ def automacao(periodo):
                             pyautogui.press("enter", interval=1)
                             if utils.reabrir_rotina_siga(data_formatada):
                                 return lancar_CNAB(arq)
-                        if type(ignorar2) == tuple or type(ignorar3) == tuple:
+                        if type(ignorar2) == tuple or type(ignorar3) == tuple or type(ignorar4):
                             pyautogui.press("enter", interval=0.2)
                         if type(ignorar) == tuple:
                             pyautogui.press("enter", interval=0.2)
@@ -271,5 +272,4 @@ def automacao(periodo):
                                 return
  
             lancar_CNAB(arq)
- 
             sleep(1)
