@@ -117,9 +117,9 @@ def reabrir_rotina_siga(data_formatada):
                 pyautogui.click(x, y)
             break
     while True:
-        ignorar4 = encontrar_imagem(r'Imagens\ReferenciaIgnorar4.png')
+        ignorar5 = encontrar_imagem(r'Imagens\ReferenciaIgnorar5.png')
         sleep(1)
-        if type(ignorar4) == tuple:
+        if type(ignorar5) == tuple:
             pyautogui.press(["tab"]*2, interval=0.2)
             pyautogui.press("enter", interval=0.2)
             break
