@@ -255,7 +255,7 @@ def automacao(periodo):
                             pyautogui.press("enter", interval=1)
                             if utils.reabrir_rotina_siga(data_formatada):
                                 return lancar_CNAB(arq)
-                        if type(ignorar2) == tuple or type(ignorar3) == tuple or type(ignorar4):
+                        if type(ignorar2) == tuple or type(ignorar3) == tuple or type(ignorar4) == tuple:
                             pyautogui.press("enter", interval=0.2)
                         if type(ignorar) == tuple:
                             pyautogui.press("enter", interval=0.2)
