@@ -31,14 +31,14 @@ def automacao(periodo):
     driver.get("https://webedi.nexxera.io/login")
     driver.maximize_window()
  
-    _ = driver.find_element(By.ID, "mailbox").send_keys("**************")
-    _ = driver.find_element(By.ID, "password").send_keys("*******")
-    _ = driver.find_element(By.ID, "submit").click()
+    driver.find_element(By.ID, "mailbox").send_keys("**************")
+    driver.find_element(By.ID, "password").send_keys("*******")
+    driver.find_element(By.ID, "submit").click()
  
     aux = 0
     while True:
         try:
-            _ = driver.find_element(By.XPATH, "/html/body/div[4]/div/button").click()
+            driver.find_element(By.XPATH, "/html/body/div[4]/div/button").click()
             break
         except:
             sleep(1)
@@ -61,11 +61,11 @@ def automacao(periodo):
  
  
     while True:
-        _ = driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[1]/div/div[2]/ul/ng2-flatpickr/div/input[2]").clear()
-        _ = driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[1]/div/div[2]/ul/ng2-flatpickr/div/input[2]").send_keys(periodo)
+        driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[1]/div/div[2]/ul/ng2-flatpickr/div/input[2]").clear()
+        driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[1]/div/div[2]/ul/ng2-flatpickr/div/input[2]").send_keys(periodo)
  
         sleep(1.5)
-        _ = driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[1]/div/div[2]/ul/button").click()
+        driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[1]/div/div[2]/ul/button").click()
  
         sleep(1.5)
         data_no_portal = driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[1]/div/div[2]/ul/ng2-flatpickr/div/input[2]").get_attribute("value")
@@ -76,18 +76,18 @@ def automacao(periodo):
  
     sleep(5)
     if driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[2]/div/cdk-virtual-scroll-viewport/div[1]/table/thead/tr[1]/th[1]/input").is_selected():
-        _ = driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[2]/div/cdk-virtual-scroll-viewport/div[1]/table/thead/tr[1]/th[1]/input").click()
+        driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[2]/div/cdk-virtual-scroll-viewport/div[1]/table/thead/tr[1]/th[1]/input").click()
         if driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[2]/div/cdk-virtual-scroll-viewport/div[1]/table/tbody/tr[1]/td[1]/input").is_selected():
             while driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[2]/div/cdk-virtual-scroll-viewport/div[1]/table/tbody/tr[1]/td[1]/input").is_selected():
                 sleep(1)
  
-    _ = driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[2]/div/cdk-virtual-scroll-viewport/div[1]/table/thead/tr[1]/th[1]/input").click()
+    driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[2]/div/cdk-virtual-scroll-viewport/div[1]/table/thead/tr[1]/th[1]/input").click()
     while not driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[2]/div/cdk-virtual-scroll-viewport/div[1]/table/tbody/tr[1]/td[1]/input").is_selected():
         sleep(1)
  
  
     sleep(5)
-    _ = driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[3]/div/div/button[1]").click()
+    driver.find_element(By.XPATH, "/html/body/app-root/app-shell/div/skyline-communication/div/div/div[2]/div/skyline-mailbox-table/div[3]/div/div/button[1]").click()
  
     sleep(6)
  
